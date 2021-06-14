@@ -12,6 +12,7 @@ export function ajax(props){
         </div>
         
         `;
+        // document.querySelector(".loader").style.dislpay= "none";
 
         console.log(err);
     })
