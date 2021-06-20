@@ -1,6 +1,8 @@
-const Component = (function () {
+
+
+const Component = (function () {   
   //Creamos el Constructor del Componente
-  const Constructor = function (options) {
+     const Constructor = function (options) {
     this.el = options.el;
     this.data = options.data;
     this.template = options.template;

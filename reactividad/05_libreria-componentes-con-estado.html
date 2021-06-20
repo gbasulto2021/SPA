@@ -17,8 +17,9 @@
   <ul id="todo-list"></ul>
   <script src="Component.js"></script>
   <script>
+    
     const d = document;
-
+     let key;
     const app = new Component({
       el: "#todo-list",
       data: {
@@ -51,7 +52,7 @@
       if (!$item) return;
 
       //Actualizar el State de forma reactiva
-      const lastState = app.getState()
+      const lastState = app.getState();
       lastState.todoList.push($item.value);
       app.setState({ todoList: lastState.todoList });
 

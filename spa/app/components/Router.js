@@ -20,10 +20,10 @@ export async function Router(){
          
         await ajax({
                 url: api.POSTS,
-                cbSuccess: (main)=>{
+                cbSuccess: (posts)=>{
                   let html = "";
-                  // console.log(main)
-                  main.forEach(post => {
+                  // console.log(posts)
+                  posts.forEach(post => {
                   
                   html += PostCard (post)});
                   // d.querySelector('.loader').style.display = "none";
